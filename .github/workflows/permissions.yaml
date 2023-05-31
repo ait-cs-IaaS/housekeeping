@@ -1,0 +1,11 @@
+name: "add permissions to repositories"
+on:
+  schedule:
+    - cron:  '0 12 * * *'    # Every Day at 12:00
+
+jobs:
+  permissionMaster:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
